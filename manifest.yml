@@ -1,0 +1,12 @@
+---
+applications:
+- instances: 1
+  timeout: 180
+  name: WatsonNewsIntelligenceBUPKX
+  buildpack: sdk-for-nodejs
+  command: npm start
+  memory: 256M
+  domain: mybluemix.net
+  host: watson-news-intelligence-bupkx
+  services:
+    - watson-news-intelligence-discovery-1525714616589
